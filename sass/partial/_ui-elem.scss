@@ -1,0 +1,520 @@
+// custom checkbox unit style
+.checkbox {
+    display: inline-block;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    margin-top: 0;
+    input[type="checkbox"] {
+        display: none;
+    }
+    .check-label {
+        position: relative;
+
+        display: inline-block;
+        width: 140px;
+        min-height: 100px;
+        padding: 10px;
+
+        font-family: $blogger_L;
+
+        text-align: center;
+        vertical-align: middle;
+
+        color: $medium-gray;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+
+        @include rem(font-size, 18px);
+        .check {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+
+            display: none;
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+        .icon {
+            display: block;
+            width: 32px;
+            height: 32px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+
+            background-image: url("../../images/housing_images/maple_leaf.png");
+        }
+    }
+    input[type="checkbox"]:checked + label {
+        color: $green;
+        border-color: $yellow;
+        .check {
+            display: block;
+        }
+    }
+}
+// end
+
+/* ***********************************************************************************/
+/* Custom radio buttons*/
+/* ***********************************************************************************/
+
+.radio-div {
+    margin-bottom: 20px;
+    /* One radio button per line */
+    label {
+        display: block;
+
+        cursor: pointer;
+
+        // custom radio buttons unit style
+        [type="radio"] {
+            position: absolute;
+
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+
+            border: 0;
+        }
+
+
+        /* the basic, unchecked style */
+        [type="radio"] + .radio-button:before {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+            margin-left: 1px;
+
+            content: "";
+            transition: .5s ease all;
+            vertical-align: -.25em;
+
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 2px #555;
+
+            @include border-radius(16px);
+        }
+
+        /* the checked style using the :checked pseudo class */
+        [type="radio"]:checked + .radio-button:before {
+            background: $green;
+            box-shadow: 0 0 0 2px $green;
+        }
+        span {
+            display: inline-block;
+            margin-left: 2px;
+
+            vertical-align: top;
+            input {
+                display: none;
+            }
+            &.text-div {
+                font-family: $blogger_R;
+
+                color: $dark-gray;
+
+                @include rem(font-size, 18px);
+            }
+        }
+    }
+}
+
+/* ***********************************************************************************/
+/* Custom checkbox buttons*/
+/* ***********************************************************************************/
+.checkbox-small {
+    position: relative;
+
+    margin-top: 0 !important;
+    label.sm-label {
+        position: relative;
+
+        font-family: $blogger_R;
+
+        border: 5px solid transparent;
+
+        @include rem(font-size, 16px);
+        .custom-checkbox {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+
+            cursor: pointer;
+            vertical-align: text-top;
+
+            opacity: .5;
+            color: $white;
+            border: 1px solid #ccc;
+            -webkit-border-radius: 4px;
+               -moz-border-radius: 4px;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: 3px 3px;
+
+                 -o-border-radius: 4px;
+            .highlight {
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+            svg {
+                display: none;
+            }
+            i {
+                display: none;
+
+                vertical-align: initial;
+            }
+        }
+    }
+    input[type=checkbox].sm-input {
+        display: none;
+    }
+    input[type=checkbox].sm-input:checked + label.sm-label {
+        .custom-checkbox {
+            text-align: center;
+
+            opacity: 1;
+            border: none !important;
+            background-color: $green;
+            svg {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+
+                color: $white;
+            }
+            i {
+                display: inline-block;
+
+                font-size: 12px;
+
+                @include medmx(768px) {
+                    vertical-align: middle !important;
+                }
+            }
+        }
+    }
+}
+
+// Dropdown select unit style
+.dropdown-select {
+    button {
+        width: 100%;
+
+        font-family: $blogger_L;
+
+        text-align: left;
+
+        color: $medium-gray;
+
+        @include rem(font-size, 18px);
+        &:hover,
+        &:focus {
+            background-color: #fff;
+        }
+        .caret {
+            width: 16px;
+            height: 16px;
+            margin-top: 3px;
+
+            border: none;
+            svg {
+                width: 14px;
+                height: 14px;
+
+                color: #333;
+            }
+        }
+    }
+    .dropdown-menu {
+        width: 100%;
+        li {
+            a {
+                font-family: $blogger_L;
+
+                color: $medium-gray;
+
+                @include rem(font-size, 18px);
+                &:hover {
+                    color: #fff;
+                    background-color: $green;
+                }
+            }
+            &.active {
+                a {
+                    color: $white;
+                    background-color: $green;
+                }
+            }
+        }
+    }
+}
+//  end
+
+// tabs units
+
+.tabs-row {
+    padding: 15px 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    -webkit-overflow-scrolling: touch;
+
+    .tabs {
+        width: 1500px;
+        li {
+            display: inline-block;
+            float: left;
+            margin-right: 10px;
+            // overflow: hidden;
+            box-sizing: border-box;
+            a {
+                height: 40px;
+                padding: 10px 0;
+                padding-bottom: 3px;
+                margin-right: 10px;
+
+                font-family: $blogger_R;
+
+                color: $dark-gray;
+
+                @include rem(line-height, 24px);
+                @include rem(font-size, 22px);
+                @include transition(all .2s ease-in-out);
+            }
+            &:hover a,
+            &:focus a,
+            &:active a,
+            &.active a {
+                color: $green;
+                border-bottom: 2px solid $green;
+                // @include transition(.3s all);
+                // @include transform(scale(1.1));
+
+                // @include rem(font-size, 24px);
+            }
+        }
+    }
+}
+// end
+
+
+.arrow-down {
+    width: 0;
+    height: 0;
+
+    border-top: 20px solid #f00;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+
+// button style
+.yellow-btn {
+    height: 40px;
+    min-width: 170px;
+    margin-bottom: 10px;
+
+    font-family: $blogger_M;
+
+    -webkit-transition: all .3s ease-in-out;
+       -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+         -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+
+    opacity: .8;
+    color: $white;
+    border: none;
+    background-color: $yellow;
+
+    @include rem(font-size, 18px);
+    &:hover,
+    &:focus,
+    &:active {
+        opacity: 1;
+        color: $white;
+        outline: none !important;
+        background-color: $yellow;
+    }
+}
+.green-btn {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+
+    font-family: $blogger_M;
+
+    -webkit-transition: all .3s ease-in-out;
+       -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+         -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+
+    opacity: .8;
+    color: $white;
+    border: none;
+    background-color: $green;
+
+    @include rem(font-size, 18px);
+    &:hover,
+    &:focus,
+    &:active {
+        opacity: 1;
+        color: $white;
+        outline: none !important;
+        background-color: $green;
+    }
+}
+
+.heading {
+    position: relative;
+
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-family: $blogger_L;
+
+    color: $medium-gray;
+
+    @include rem(font-size, 18px);
+    .border-inner-bottom {
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+
+        width: 90%;
+        height: 3px;
+        margin: 0 auto;
+
+        background-color: $green;
+
+        @include transform(translateX(-50%));
+    }
+}
+
+
+/*Checkout Button */
+.checkout-yellow-button {
+    // display: block;
+    // float: right;
+    min-width: 120px;
+    margin-right: 10px;
+
+    font-family: "blogger_sansregular";
+    // line-height: 36px;
+    // text-align: center;
+
+    text-transform: capitalize;
+
+    color: $white;
+    border: none;
+    outline: none;
+    background-color: #ffc400;
+
+    @include border-radius(4px);
+    @include rem(font-size, 16px);
+    @include medmx(768px) {
+        display: block;
+        // float: none;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        clear: both;
+    }
+    &:last-child {
+        margin-right: 0;
+
+        @include medmx(768px) {
+            margin-right: auto;
+        }
+    }
+}
+
+// bottom sticky button
+.bottom-sticky-btn {
+    position: fixed;
+    bottom: -1px;
+
+    width: 100%;
+
+    background-color: $white;
+    button {
+        width: 100%;
+        margin: 0;
+
+        border-radius: 0;
+    }
+}
+
+//Green Icon Button
+.green-icon-button {
+    display: inline-block;
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    color: $green;
+    border: 1px solid $green;
+    background-color: transparent;
+
+    @include medmx(768px) {
+        position: relative;
+        top: auto;
+        right: auto;
+
+        display: inline-block;
+        padding: 0;
+        margin-right: 15px;
+
+        border: none;
+    }
+    @include border-radius(4px);
+    .button-icon {
+        display: inline-block;
+        // float: left;
+        width: 15px;
+        height: 15px;
+
+        @include medmx(768px) {
+            width: 12px;
+            height: 12px;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+            margin-top: 2px;
+
+            fill: currentColor;
+        }
+    }
+
+    .button-text {
+        display: inline-block;
+        margin-left: 10px;
+
+        font-family: $blogger_R;
+        line-height: 18px;
+
+        vertical-align: middle;
+
+        color: $green;
+
+        @include rem(font-size, 16px);
+        @include medmx(768px) {
+            display: inline-block;
+            margin-left: 5px;
+
+            font-family: $blogger_R;
+
+            @include rem(font-size, 14px);
+        }
+    }
+}

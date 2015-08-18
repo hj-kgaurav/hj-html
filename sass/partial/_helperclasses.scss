@@ -1,0 +1,338 @@
+a {
+    text-decoration: none;
+
+    color: $medium-gray;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+// width
+.W100 {
+    width: 100%;
+}
+
+
+// padding
+.PD0 {
+    padding: 0;
+}
+.PD0-imp {
+    padding: 0 !important;
+}
+.PR0 {
+    padding-right: 0;
+}
+.PT0-imp {
+    padding-top: 0 !important;
+}
+.PT0-imp {
+    padding-top: 0 !important;
+}
+.PT10 {
+    padding-top: 10px;
+}
+.PT40 {
+    padding-top: 40px;
+}
+.PLR15 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.PA12 {
+    padding: 12px;
+}
+.PB20 {
+    padding-bottom: 20px;
+}
+// common headings (Default style)
+.heading-h1 {
+    margin-bottom: 15px;
+
+    font-family: "blogger_sansmedium";
+
+    color: $green;
+
+    @include rem(font-size, 36px);
+}
+.heading-h2 {
+    margin-bottom: 15px;
+
+    font-family: "blogger_sanslight";
+
+    color: $medium-gray;
+
+    @include rem(font-size, 20px);
+}
+.helper-text {
+    position: relative;
+
+    margin-bottom: 15px;
+
+    font-family: "blogger_sanslight";
+
+    color: $medium-gray;
+
+    @include rem(font-size, 18px);
+    .border-bottom {
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+
+        width: 30px;
+        height: 2px;
+
+        background-color: #ffc400;
+    }
+}
+.placeholder-heading {
+    margin-bottom: 10px;
+
+    font-family: "blogger_sansregular";
+
+    color: $medium-gray;
+
+    @include rem(font-size, 18px);
+}
+
+// gradient
+.gradient-white {
+    background: linear-gradient(to top, white, rgba(255, 255, 251, 0));
+}
+.linearBg {
+    opacity: .3;
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, left top, right top, from($green), to($yellow));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(left, $yellow, $green);
+    /* Firefox 3.6+ */
+    background:    -moz-linear-gradient(left, $yellow, $green);
+    /* IE 10 */
+    background:     -ms-linear-gradient(left, $yellow, $green);
+    /* Opera 11.10+ */
+    background:      -o-linear-gradient(left, $yellow, $green);
+    /* fallback */
+    // background-color: #1a82f7;
+    // background-repeat: repeat-y;
+}
+
+.inside-linearBg {
+    opacity: .8;
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, left top, right top, from($yellow), to($green));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(left, $green, $yellow);
+    /* Firefox 3.6+ */
+    background:    -moz-linear-gradient(left, $green, $yellow);
+    /* IE 10 */
+    background:     -ms-linear-gradient(left, $green, $yellow);
+    /* Opera 11.10+ */
+    background:      -o-linear-gradient(left, $green, $yellow);
+    /* fallback */
+    // background-color: #1a82f7;
+    // background-repeat: repeat-y;
+}
+
+
+
+//overlay
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(0,0,0,.6);
+}
+
+// blure effect
+.blur {
+    -webkit-transform: translateZ(0);
+       -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+            transform: translateZ(0);
+
+    -webkit-filter: blur(15px);
+       -moz-filter: blur(15px);
+        -ms-filter: blur(15px);
+         -o-filter: blur(15px);
+            filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
+            filter: blur(15px);
+            filter: blur(15px);
+}
+
+svg {
+    fill: currentColor;
+}
+
+// color classes to extend or common use
+// text color
+.f-cl-gray {
+    color: $medium-gray;
+}
+.f-cl-gray-sharp {
+    color: $gray-sharp;
+}
+.f-cl-green {
+    color: $green;
+}
+.f-cl-white {
+    color: $white;
+}
+.f-cl-white-imp {
+    color: $white !important;
+}
+// text-transform
+.text-uppercase {
+    text-transform: uppercase;
+}
+// font size
+.f-14 {
+    @include rem(font-size, 14px);
+}
+.f-16 {
+    @include rem(font-size, 16px);
+}
+// background color
+.gray-bg {
+    background-color: $body-bg-color;
+}
+
+.white-bg-imp {
+    background-color: #fff !important;
+}
+
+.transparent-bg-imp {
+    background-color: transparent !important;
+}
+
+// height
+.H-auto {
+    height: auto !important;
+}
+.MX-H60 {
+    max-height: 60px;
+}
+.o-flow-y-sc {
+    overflow-y: scroll;
+}
+.o-flow-X {
+    overflow-x: hidden;
+}
+.o-flow-H {
+    overflow: hidden;
+}
+.o-flow-HX {
+        overflow-x: hidden;
+    -ms-overflow-x: hidden;
+}
+.body-HB {
+    height: 100%;
+
+    background-color: #f1f5f9;
+}
+
+// position
+.rel {
+    position: relative;
+}
+.Zi0 {
+    z-index: 0;
+}
+// margin
+.MB0 {
+    margin-bottom: 0;
+}
+.MB0-imp {
+    margin-bottom: 0 !important;
+}
+.MB5 {
+    margin-bottom: 5px;
+}
+.MB10 {
+    margin-bottom: 10px;
+}
+.MB10-imp {
+    margin-bottom: 10px !important;
+}
+.MB20 {
+    margin-bottom: 20px;
+}
+.MB40 {
+    margin-bottom: 40px;
+}
+.MB40-imp {
+    margin-bottom: 40px !important;
+}
+.MT40-imp {
+    margin-top: 40px !important;
+}
+.MLR15 {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+@include medmx(768px) {
+    .MB-sm-0 {
+        margin-bottom: 0 !important;
+    }
+}
+
+.ln-h1 {
+    line-height: 1;
+}
+
+
+.house-cleaning-bg {
+    background-image: url("../../images/laundry_images/laundry_banner.jpg");
+}
+.appliance-bg {
+    background-image: url("../../images/categories/Appliances_result.jpg");
+}
+.beauty-bg {
+    background-image: url("../../images/categories/Beauty_result.jpg");
+}
+.carpentry-bg {
+    background-image: url("../../images/categories/Carpentry_result.jpg");
+}
+.electrician-bg {
+    background-image: url("../../images/categories/Electrician_result.jpg");
+}
+.fitness-bg {
+    background-image: url("../../images/categories/Fitness_result.jpg");
+}
+.house-cleaning-bg {
+    background-image: url("../../images/categories/HouseCleaning_result.jpg");
+}
+.laptop-bg {
+    background-image: url("../../images/categories/LaptopRepair_result.jpg");
+}
+.laundry-bg {
+    background-image: url("../../images/categories/Laundry_result.jpg");
+}
+.mobile-bg {
+    background-image: url("../../images/categories/MobileRepair_result.jpg");
+}
+.painting-bg {
+    background-image: url("../../images/categories/Painting_result.jpg");
+}
+.pest-control-bg {
+    background-image: url("../../images/categories/PestControl_result.jpg");
+}
+.plumbing-bg {
+    background-image: url("../../images/categories/Plumbing_result.jpg");
+}
+/*Class to align text right in dexktop and center in mobile */
+
+.text-r-c {
+    text-align: right;
+
+    @include medmx(768px) {
+        text-align: center;
+    }
+}
+
+.initial-hide {
+    display: none;
+}

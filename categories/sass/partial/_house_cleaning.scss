@@ -1,0 +1,257 @@
+
+// house cleaning page style
+
+.housing-wrapper {
+    position: relative;
+    z-index: 1;
+
+    // margin-bottom: 20px;
+    .bg-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background-image: url(../../images/housing_images/housing_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .page-content {
+        position: relative;
+        z-index: 1;
+
+        height: inherit;
+        padding: 0;
+        // padding-top: 10px;
+        // padding-bottom: 20px;
+
+        background-color: #f1f5f9;
+        .container {
+            height: inherit;
+
+            @include medmx(767px) {
+                padding: 0;
+            }
+            .mid-content {
+                // padding-bottom: 100px;
+                background-color: #fff;
+            }
+        }
+        .top-heading {
+            position: relative;
+
+            padding: 20px;
+            overflow: hidden;
+
+            border-bottom: 1px solid #ccc;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            .container {
+                position: relative;
+
+                padding-top: 20px;
+                padding-left: 50px;
+
+                background-color: transparent;
+
+                @include medmx(767px) {
+                    padding-top: 0;
+                    padding-left: 15px;
+                }
+            }
+            .broom {
+                position: relative;
+                z-index: 1;
+
+                display: inline-block;
+                max-width: 70px;
+                // margin-right: 45px;
+                padding: 0;
+
+                vertical-align: top;
+
+                @include medmx(768px) {
+                    margin-bottom: 15px;
+                }
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            .top-title {
+                position: relative;
+                z-index: 1;
+
+                display: inline-block;
+                h2 {
+                    margin-bottom: 40px;
+
+                    font-family: $blogger_M;
+
+                    color: rgb(255,255,255);
+
+                    @include medmx(767px) {
+                        margin-bottom: 20px;
+                    }
+                    @include rem(font-size, 28px);
+                }
+                .nav-modal-btn {
+                    padding: 0;
+
+                    cursor: pointer;
+                    &:focus,
+                    &:active {
+                        outline: none;
+                    }
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        margin-bottom: -4px;
+
+                        color: #fff;
+                    }
+                }
+                .amount {
+                    margin-bottom: 5px;
+
+                    font-family: $blogger_R;
+
+                    color: rgba(255,255,255,.8);
+
+                    @include rem(font-size, 22px);
+                }
+                p {
+                    margin-bottom: 5px;
+
+                    font-family: $blogger_R;
+
+                    color: rgba(255,255,255,.8);
+
+                    @include rem(font-size, 18px);
+                }
+            }
+            // .notify-btn {
+            //     position: absolute;
+            //     top: 10px;
+            //     right: 10px;
+
+            //     width: 25px;
+            //     height: 25px;
+
+            //     font-family: $blogger_M;
+
+            //     cursor: pointer;
+            //     text-align: center;
+
+            //     color: $dark-gray;
+            //     border: 2px solid #555;
+            //     background-color: $yellow;
+
+            //     @include rem(line-height, 27px);
+            //     @include border-radius(100%);
+            //     @include rem(font-size, 20px);
+            // }
+        }
+        .house-type {
+            padding: 15px 20px ;
+            h2 {
+                margin-bottom: 20px;
+            }
+            .dropdown-group {
+                padding-left: 0;
+
+                @include medmx(768px) {
+                    margin-bottom: 20px;
+                }
+                .radio-div {
+                    label {
+                        display: inline-block;
+                    }
+                }
+                .dropdown {
+                    .caret {
+                        position: absolute;
+                        top: 1px;
+                        right: 1px;
+
+                        display: inline-block;
+                        height: 80%;
+                        padding-top: 4px;
+                        padding-right: 20px;
+                        padding-left: 5px;
+
+                        background-color: #fff;
+
+                        @include border-radius(3px);
+                    }
+
+                    .btn-default {
+                        background-color: #fff !important;
+                        &:active,
+                        &:focus,
+                        &.active,
+                        &:hover,
+                        &.open {
+                            outline: none !important;
+                            box-shadow: none;
+                        }
+                    }
+                }
+                h4 {
+                    margin-bottom: 15px !important;
+
+                    font-family: $blogger_R;
+
+                    color: $dark-gray;
+
+                    @include rem(font-size, 18px);
+                }
+            }
+            .services {
+                .total-amount {
+                    padding-bottom: 20px;
+                    .price {
+                        margin-bottom: 10px;
+
+                        font-family: $blogger_L;
+
+                        color: $medium-gray;
+
+                        @include rem(font-size, 30px);
+                    }
+                    .yellow-btn {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .service-info {
+                ul {
+                    list-style-type: none;
+                    li {
+                        margin-bottom: 10px;
+
+                        font-family: $blogger_R;
+
+                        color: $medium-gray;
+
+                        @include rem(font-size, 16px);
+                        &:before {
+                            float: left;
+                            width: 8px;
+                            height: 8px;
+                            margin: 3px 20px 0 10px;
+                            // line-height: 16px;
+
+                            content: "";
+
+                            border-radius: 50%;
+                            background-color: $green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

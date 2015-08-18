@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Housejoy | My Orders</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/profile.css">
+	
+</head>
+<body class="body-HB">
+	<div class="page-wrapper">
+		<div class="header">
+			<header class="navbar navbar-default">
+				<div class="navbar-header">
+					<div class="logo-div text-center">
+						<a href="#"><img src="../images/housejoy-logo.png" alt=""></a>
+                    	<!-- <a class="hide visible-xs" href="#"><img class="img-responsive" src="../images/logo-green.png" alt=""></a> -->
+						<button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left hamburger is-closed hide visible-xs">
+							<span class="hamb-top"></span>
+							<span class="hamb-middle"></span>
+							<span class="hamb-bottom"></span>
+						</button>
+					</div>
+				</div>
+				<div class="navbar-inverse side-collapse in">
+                    <div class="logo-box hide visible-xs">
+                    	<a href="#"><img src="../images/logo-green.png" alt=""></a>
+                    </div>
+					<nav class="navbar-collapse">
+						<ul class="nav navbar-nav hidden-xs">
+							<li>
+								<div class="dropdown dropdown-select">
+									<button class="btn btn-default dropdown-toggle text-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+										Bangalore
+                                        <span class="caret pull-right">
+                                            <svg class="f-cl-white-imp">
+                                                <use xlink:href="../images/profile_images/svg-icon.svg#icon-down"></use>
+                                            </svg>
+                                        </span>
+									</button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+										<li role="presentation" class="active">
+											<a role="menuitem" tabindex="-1" href="#">Bangalore</a>
+										</li>
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="#">Chennai</a>
+										</li>
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="#">Mumbai</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right user-dropdown">
+							<li class="dropdown hidden-xs">
+								<button class="btn btn-default dropdown-toggle notification" type="button" id="notification-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span class="notification">
+										<svg class="icon new-notification">
+											<use xlink:href="../images/profile_images/svg-icon.svg#icon-appointment"></use>
+										</svg>
+									</span>									
+								</button>
+								<ul class="dropdown-menu notification-dropdown-class" aria-labelledby="notification-dropdown">
+									<li class="read">Ramesh will deliver your handset on 19th March between 3pm - 5pm. Please be present at the shared address during pickup time.</li>
+									<li>Please be present at the shared address during pickup time.</li>
+									<li>Please be present at the shared address during pickup time.</li>
+									<li>Ramesh will deliver your handset on 19th March between 3pm - 5pm.</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span class="profile-image-div">						
+										<span class="profile-image">
+											<img src="../images/profile_images/profile-pic.jpg" alt="profile picture" class="img-responsive">
+										</span>
+										<span class="profile-name">Robin Dhanwani</span>
+										<span class="caret" style="color:#fff;"></span>									
+									</span>									
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+									<li><a href="#" class="active">my account</a></li>
+									<li><a href="#">my orders</a></li>
+									<li><a href="#">my appointments</a></li>
+									<li><a href="#">houseJoy wallet</a></li>
+									<li><a href="#">logout</a></li>
+								</ul>
+							</li>
+							<li class="hide visible-xs"><a href="#">Book A Service</a></li>
+							<li class="hide visible-xs"><a href="#">My Account</a></li>
+							<li class="hide visible-xs"><a href="#">My Orders</a></li>
+							<li class="hide visible-xs"><a href="#">My Appointment</a></li>
+							<li class="hide visible-xs"><a href="#">Housejoy Wallet</a></li>
+							<li class="hide visible-xs"><a href="#">Logout</a></li>
+						</ul>
+						<div class="play-store hide visible-xs">
+							<span class="text">Download our App</span>
+							<a href="#">
+								<span class="img"><img src="../images/home_images/google_store.png" alt=""></span>
+							</a>
+						</div>
+					</nav>
+				</div>
+			</header>
+		</div>		
+		<div class="housing-wrapper gray-bg">
+			<!-- <div class="bg-image blur"></div> -->
+			<div class="container page-content transparent-bg-imp PD0-imp">				
+				<div class="left-section col-xs-12 col-sm-4 col-md-3 section-padding hidden-xs">
+					<div class="profile-img-div white-bg-imp">						
+						<div class="profile-img">
+							<img src="../images/profile_images/profile-pic.jpg" alt="profile picture">
+						</div>
+						<div class="profile-name">Gregory Snyder</div>
+					</div>
+					<a href="#" class="account-links">
+						my account
+					</a>
+					<a href="#" class="account-links account-active-link">
+						my orders
+					</a>
+					<a href="#" class="account-links">
+						my appointments
+					</a>
+				</div>
+				<div class="right-section col-xs-12 col-sm-8 col-md-9 section-padding">
+					<div class="white-bg-imp overflow-hidden my-orders">
+						<div class="row bottom-border">
+							<div class="right-section-title">my orders</div>
+							<div class="filterby-button-div">
+								<div class="filterby-button">
+									<span class="button-text">
+										Filter By
+									</span>
+									<span class="button-icon">
+										<!-- <span class="i-open"></span> -->
+										<svg class="icon">
+											<use xlink:href="../images/profile_images/svg-icon.svg#icon-up" class="up-icon"></use>
+											<use xlink:href="../images/profile_images/svg-icon.svg#icon-down" class="down-icon"></use>
+										</svg>
+									</span>									
+								</div>
+							</div>
+						</div>
+						<div class="row white-bg-imp filter-by-section ">
+							<div class="row row-type1 white-bg-imp work-status">
+								<div class="col-xs-12 col-sm-4 checkbox-div">
+									<div class="checkbox-icon-label-div">
+										<div class="checkbox-icon-div">
+											<input type="checkbox" name="completed" id="completed" value="same-address" />
+											<label class="checkbox-style" for="completed">
+					                            <svg class="icon ">
+													<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+												</svg>
+					                        </label>
+				                        </div>
+				                        <div class="checkbox-label-text">
+				                        	<span class="same-address-label">Completed</span>
+				                        </div>
+			                        </div>
+								</div>
+								<div class="col-xs-12 col-sm-4 checkbox-div">
+									<div class="checkbox-icon-label-div">
+										<div class="checkbox-icon-div">
+											<input type="checkbox" name="pending" id="pending" value="same-address" />
+											<label class="checkbox-style" for="pending">
+					                            <svg class="icon ">
+													<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+												</svg>
+					                        </label>
+				                        </div>
+				                        <div class="checkbox-label-text">
+				                        	<span class="same-address-label">Pending</span>
+				                        </div>
+			                        </div>
+								</div>
+								<div class="col-xs-12 col-sm-4 checkbox-div">
+									<div class="checkbox-icon-label-div">
+										<div class="checkbox-icon-div">
+											<input type="checkbox" name="cancelled" id="cancelled" value="same-address" />
+											<label class="checkbox-style" for="cancelled">
+					                            <svg class="icon ">
+													<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+												</svg>
+					                        </label>
+				                        </div>
+				                        <div class="checkbox-label-text">
+				                        	<span class="same-address-label">Cancelled</span>
+				                        </div>
+			                        </div>
+								</div>
+							</div>
+							<div class="row row-type1 white-bg-imp category-filter">
+								<ul class="col-xs-12 col-sm-4 category-filter-checkbox-div">
+									<!--  -->
+									<li>
+										<div class="checkbox-div">
+											<label for="house-cleaning">
+												<span class="checkbox-span">
+													<input type="checkbox" value="house-cleaning" name="house-cleaning" id="house-cleaning">
+													<span class="checkbox-icon">
+														<svg class="icon ">
+															<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+														</svg>
+													</span>
+												</span>
+												<span class="text-div">
+												house Cleaning
+												</span>
+											</label>
+					                    </div>
+									</li>
+
+									<li>
+										<div class="checkbox-div">
+											<label for="electrical">
+												<span class="checkbox-span">
+													<input type="checkbox" value="electrical" name="electrical" id="electrical">
+													<span class="checkbox-icon">
+														<svg class="icon ">
+															<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+														</svg>
+													</span>
+												</span>
+												<span class="text-div">
+												electrical
+												</span>
+											</label>											
+					                    </div>	
+									</li>
+
+									<li>
+										<div class="checkbox-div">
+											<label for="laptop-repairs">
+												<span class="checkbox-span">
+													<input type="checkbox" value="laptop-repairs" name="laptop-repairs" id="laptop-repairs">
+													<span class="checkbox-icon">
+														<svg class="icon ">
+															<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+														</svg>
+													</span>
+												</span>
+												<span class="text-div">
+												laptop repairs
+												</span>
+											</label>
+					                    </div>	
+									</li>
+								</ul>
+								<ul class="col-xs-12 col-sm-4 category-filter-checkbox-div">
+									<li>
+										<div class="checkbox-div">
+											<label for="beauty">
+												<span class="checkbox-span">
+													<input type="checkbox" value="beauty" name="beauty" id="beauty">
+													<span class="checkbox-icon">
+														<svg class="icon ">
+															<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+														</svg>
+													</span>
+												</span>
+												<span class="text-div">
+												beauty
+												</span>
+											</label>
+											
+					                    </div>	
+									</li>
+									<li>
+										<div class="checkbox-div">
+											<label for="mobile-repairs">
+												<span class="checkbox-span">
+													<input type="checkbox" value="mobile-repairs" name="mobile-repairs" id="mobile-repairs">
+													<span class="checkbox-icon">
+														<svg class="icon ">
+															<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+														</svg>
+													</span>
+												</span>
+												<span class="text-div">
+												mobile repairs
+												</span>
+											</label>
+											
+					                    </div>	
+									</li>
+									<li>
+										<div class="checkbox-div">
+											<label for="appliances">
+												<span class="checkbox-span">
+													<input type="checkbox" value="appliances" name="appliances" id="appliances">
+													<span class="checkbox-icon">
+														<svg class="icon ">
+															<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+														</svg>
+													</span>
+												</span>
+												<span class="text-div">
+												appliances
+												</span>
+											</label>
+											
+					                    </div>	
+									</li>
+								</ul>
+								<ul class="col-xs-12 col-sm-4 category-filter-checkbox-div">
+									<!--  -->
+									<li>
+										<div class="checkbox-div">
+											<label for="plumbing">
+												<span class="checkbox-span">
+													<input type="checkbox" value="prlumbing" name="plumbing" id="plumbing">
+													<span class="checkbox-icon">
+														<svg class="icon ">
+															<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+														</svg>
+													</span>
+												</span>
+												<span class="text-div">
+												plumbing
+												</span>
+											</label>
+					                    </div>
+									</li>
+
+									<li>
+										<div class="checkbox-div">
+											<label for="fitness">
+												<span class="checkbox-span">
+													<input type="checkbox" value="fitness" name="fitness" id="fitness">
+													<span class="checkbox-icon">
+														<svg class="icon ">
+															<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+														</svg>
+													</span>
+												</span>
+												<span class="text-div">
+												fitness
+												</span>
+											</label>											
+					                    </div>	
+									</li>
+
+									<li>
+										<div class="checkbox-div">
+											<label for="carpentry">
+												<span class="checkbox-span">
+													<input type="checkbox" value="carpentry" name="carpentry" id="carpentry">
+													<span class="checkbox-icon">
+														<svg class="icon ">
+															<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+														</svg>
+													</span>
+												</span>
+												<span class="text-div">
+												carpentry
+												</span>
+											</label>
+					                    </div>	
+									</li>
+								</ul>
+							</div>
+							<div class="row row-type1 white-bg-imp category-filter">
+								<div class="button-div">
+									<button class="green-icon-button">
+										<span class="button-icon">
+											<img src="../images/svg/reset.svg" alt="">
+										</span>
+										<span class="button-text">
+											Reset
+										</span>
+									</button>
+								</div>
+								<div class="button-div">
+									<button class="green-icon-button">
+										<span class="button-icon">
+											<img src="../images/svg/checkmark.svg" alt="">
+										</span>
+										<span class="button-text">
+											Apply
+										</span>
+									</button>
+								</div>
+								
+							</div>
+						</div>
+						
+						<div class="row row-type1">
+							<div class="row">
+								<div class="order-icon-div">
+									<img src="../images/svg/beauty_black.svg" alt="">
+								</div>
+								<div class="order-details">
+									<div class="order-id">Order ID : HC02B0014</div>
+									<div class="placed-on">Placed on 14th, March</div>
+								</div>								
+							</div>
+							<div class="row order-brief-text">
+								Our expert John Doe will visit your address on 18th March between 6am to 8am.
+							</div>							
+							<div class="row myorders-order-log-actions">
+								<a href="#" class="green-icon-button myorders-right-button">
+									<span class="button-icon">
+										<img src="../images/svg/message.svg" alt="">
+									</span>
+									<span class="button-text">
+										Message
+									</span>
+								</a>
+							</div>							
+						</div>
+						<div class="row row-type1">
+							<div class="row">
+								<div class="order-icon-div">
+									<img src="../images/svg/house_cleaning_black.svg" alt="">
+								</div>
+								<div class="order-details">
+									<div class="order-id">Order ID : HC02B0014</div>
+									<div class="placed-on">Placed on 14th, March</div>
+								</div>								
+							</div>
+							<div class="row order-brief-text">
+								Our expert John Doe will visit your address on 18th March between 6am to 8am.
+							</div>
+							<div class="row order-brief-text">
+								Will require : 3 - 4 days  |  $5000
+							</div>
+							<ul class="row myorders-order-log-actions">
+								<li class="log-action-button">
+									<img src="../images/svg/invoice.svg" alt="">
+									<span>Invoice</span>
+								</li>
+								<li class="log-action-button">
+									<img src="../images/svg/complaint.svg" alt="">
+									<span>Complaint</span>
+								</li>
+								<li class="green-icon-button myorders-right-button">
+									<span class="button-icon">
+										<img src="../images/svg/message.svg" alt="">
+									</span>
+									<span class="button-text">
+										Message
+									</span>
+								</li>
+							</ul>	
+						</div>
+						<div class="row row-type1">
+							<div class="row">
+								<div class="order-icon-div">
+									<img src="../images/svg/appliances_black.svg" alt="">
+								</div>
+								<div class="order-details">
+									<div class="order-id">Order ID : HC02B0014</div>
+									<div class="placed-on">Placed on 14th, March</div>
+								</div>								
+							</div>
+							<!-- <div class="row order-brief-text">
+								Our expert John Doe will visit your address on 18th March between 6am to 8am.
+							</div> -->							
+							<div class="row myorders-order-log-actions">
+								<a href="#" class="green-icon-button myorders-right-button">
+									<span class="button-icon">
+										<img src="../images/svg/repeat.svg" alt="">
+									</span>
+									<span class="button-text">
+										Repeat order
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="row row-type1">
+							<div class="row">
+								<div class="order-icon-div">
+									<img src="../images/svg/pest_control_black.svg" alt="">
+								</div>
+								<div class="order-details">
+									<div class="order-id">Order ID : HC02B0014</div>
+									<div class="placed-on">Placed on 14th, March</div>
+								</div>								
+							</div>
+							<div class="row order-brief-text">
+								Our expert John Doe will visit your address on 18th March between 6am to 8am.
+							</div>							
+							<div class="row myorders-order-log-actions">
+								<a href="#" class="green-icon-button myorders-right-button">
+									<span class="button-icon">
+										<img src="../images/svg/repeat.svg" alt="">
+									</span>
+									<span class="button-text">
+										Repeat Order
+									</span>
+								</a>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer class="home-footer clearfix">
+        <div class="foot-content col-xs-12 col-sm-4">
+            <h3 class="heading">Cities<span class="border-top"></span></h3>
+            <ul>
+                <li><a href="#">Ahmedabad</a></li>
+                <li><a href="#">Bangalore</a></li>
+                <li><a href="#">Chennai</a></li>
+                <li><a href="#">Delhi &amp; NCR</a></li>
+                <li><a href="#">Hyderabad</a></li>
+                <li><a href="#">Mumbai</a></li>
+                <li><a href="#">Pune</a></li>
+            </ul>
+        </div>
+        <div class="foot-content col-xs-12 col-sm-4">
+            <h3 class="heading">Services<span class="border-top"></span></h3>
+            <ul>
+                <li><a href="#">House Cleaning</a></li>
+                <li><a href="#">Plumbing</a></li>
+                <li><a href="#">Electrical</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Laptop Repairs</a></li>
+                <li><a href="#">Laundry</a></li>
+                <li><a href="#">Appliance Repair</a></li>
+                <li><a href="#">Mobile Repairs</a></li>
+            </ul>
+        </div>
+        <div class="foot-content col-xs-12 col-sm-4">
+            <h3 class="heading">Subscribe to Updates<span class="border-top"></span></h3>
+            <div class="newsletter">
+                <input type="text" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="Type your email">
+                <span class="arrow"><i class="fa fa-arrow-circle-right"></i></span>
+            </div>
+            <div class="socials">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
+        </div>
+        <div class="col-xs-12 foot-content bottom text-center MB-sm-0">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Help / F.A.Q</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="copyrights row-fluid text-center">
+        © Housejoy 2014 - 2015. All Rights Reserved.
+    </div>
+    <!--Login Modal -->
+    <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Login to your account</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <!-- Sign In Form -->
+                        <!-- Text input-->
+                        <div class="control-group">
+                            <label class="control-label" for="userid">Email Address</label>
+                            <div class="controls">
+                                <input id="userid" name="userid" type="email" class="form-control input-medium" placeholder="Johndoe@email.co" required="">
+                            </div>
+                        </div>
+                        <!-- Password input-->
+                        <div class="control-group">
+                            <label class="control-label" for="passwordinput1">Password</label>
+                            <div class="controls">
+                                <input id="passwordinput1" name="passwordinput" class="form-control input-medium" type="password" placeholder="********">
+                            </div>
+                        </div>
+                        <div class="control-group clearfix">
+                            <div class="checkbox-small col-xs-12 col-sm-6 PD0">
+                                <input class="sm-input" id="ck1" type="checkbox" value="">
+                                <label class="sm-label" for="ck1">
+                                    <span class="custom-checkbox">
+                                        <svg class="f-cl-white-imp">
+                                            <use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+                                        </svg>
+                                    </span>Remember Me
+                                </label>
+                            </div>
+                            <div class="action col-xs-12 col-sm-6 text-center">
+                                <button type="button" class="btn btn-default yellow-btn text-uppercase">Login</button>
+                                <a href="#" class="helper-text f-14">Forgot password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="not-member text-left" id="not-member" data-toggle="modal" data-target="#registerModal">
+                        <p class="helper-text f-14 MB5">Not a member yet?</p>
+                        <p class="helper-text MB5">Register Now!</p>
+                    </div>
+                    <a class="social-btns text-left">
+                        <span>Continue with Facebook</span>
+                        <span class="pull-right"><i class="fa fa-facebook"></i></span>
+                    </a>
+                    <a class="social-btns text-left">
+                        <span class="helper-text f-14 MB5">Continue with Google</span>
+                        <span class="pull-right"><i class="fa fa-google"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Register Modal -->
+    <div class="modal fade login-modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel-2">Sign up to your Account</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <!-- Sign In Form -->
+                        <!-- Text input-->
+                        <div class="control-group">
+                            <label class="control-label" for="userid">Username</label>
+                            <div class="controls">
+                                <input id="userid2" name="userid" type="text" class="form-control input-medium" placeholder="John Doe" required="">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="emailid">Email Address</label>
+                            <div class="controls">
+                                <input id="emailid" name="emailid" type="email" class="form-control input-medium" placeholder="Johndoe@email.co" required="">
+                            </div>
+                        </div>
+                        <!-- Password input-->
+                        <div class="control-group">
+                            <label class="control-label" for="passwordinput2">Password</label>
+                            <div class="controls">
+                                <input type="password" id="passwordinput2" name="passwordinput" class="form-control input-medium" placeholder="********" required="">
+                            </div>
+                        </div>
+                        <!-- Mobile input-->
+                        <div class="control-group">
+                            <label class="control-label" for="mobile">Mobile</label>
+                            <div class="controls">
+                                <input id="mobile" name="mobilenumber" class="form-control input-medium" type="tel" placeholder="9848022338" required="">
+                            </div>
+                        </div>
+                        <div class="control-group clearfix">
+                            <div class="checkbox-small col-xs-12 PD0 MB10">
+                                <input class="sm-input" id="ck2" type="checkbox" value="">
+                                <label class="sm-label" for="ck2">
+                                    <span class="custom-checkbox">
+                                        <svg class="f-cl-white-imp">
+                                            <use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+                                        </svg>
+                                    </span>I Agree to Housejoy
+                                    <a href="#" class="f-cl-green highlight">Terms of Service</a>
+                                </label>
+                            </div>
+                            <div class="action col-xs-12 text-right PR0">
+                                <button type="button" class="btn btn-default yellow-btn text-uppercase">Signup</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="not-member text-left" id="already-member">
+                        <p class="helper-text f-14 MB5">Already a member?</p>
+                        <p class="helper-text MB5">Login Now!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- jQuery -->
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="../js/svg4everybody.ie8.min.js"></script>
+	<script src="../js/common.js"></script>
+
+	<script>
+		$('.filterby-button-div').click(function() {	        
+	        $(".filter-by-section").toggle();
+	        $(".up-icon").toggle();
+	        $(".down-icon").toggle();
+	        $(".filterby-button-div").toggleClass( "filter-shadow" );
+	    });
+	    // $(document).click(function() {
+	    // 	$(".filter-by-section").hide();
+	    // });
+	</script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+.left-section {
+    // .white-bg-imp {
+    //     height: 100vh;
+    // }
+    .plumbing-content {
+        .dropdown-select {
+            // margin-bottom: 20px;
+            @include medmx(767px) {
+                margin-bottom: 0;
+            }
+            &:first-child {
+                margin-top: 20px;
+            }
+        }
+        &.m-content {
+            .dropdown-select {
+                @include medmx(767px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .panel {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            box-shadow: none;
+            .panel-heading {
+                padding: 20px 30px;
+                .panel-title {
+                    .checkbox-small {
+                        display: inline-block;
+                    }
+                    .custom-checkbox {
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 10px;
+
+                        vertical-align: middle;
+
+                        border: 2px solid #777;
+                        border-radius: 2px;
+                    }
+                    &.collapsed {
+                        .illusion-checkbox {
+                            width: 15px;
+                            height: 15px;
+
+                            border: 1px solid #ccc;
+                            background-color: #f6f6f6;
+                            i {
+                                display: none;
+                            }
+                        }
+                    }
+                    a {
+                        cursor: default;
+                    }
+                    a,
+                    .sm-label {
+                        .title {
+                            display: inline-block;
+
+                            font-family: $blogger_R;
+
+                            vertical-align: middle;
+
+                            color: $medium-gray;
+
+                            @include rem(font-size, 18px);
+                        }
+                    }
+                }
+            }
+            & > .panel-heading + .panel-collapse .panel-body {
+                border-top-color: transparent;
+            }
+            .panel-collapse {
+                .panel-body {
+                    border-top: none;
+                    textarea {
+                        width: 100%;
+                        min-height: 120px;
+                        padding: 15px;
+                        margin-bottom: 10px;
+
+                        font-family: $blogger_R;
+
+                        color: $medium-gray;
+
+                        @include placeholder {
+                            font-family: $blogger_R;
+
+                            color: $medium-gray;
+
+                            @include rem(font-size, 18px);
+                        }
+                        @include rem(font-size, 18px);
+                    }
+                    .image-upload {
+                        display: inline-block;
+                        clear: both;
+                        input[type="file"] {
+                            display: none;
+                        }
+                        label {
+                            display: block;
+                            height: 40px;
+                            max-width: 170px;
+                            padding: 13px 20px;
+                            margin: 0 auto;
+
+                            font-family: $blogger_M;
+
+                            cursor: pointer;
+                            text-align: center;
+                            text-transform: uppercase;
+
+                            color: $white;
+                            border-radius: 5px;
+                            background-color: $yellow;
+
+                            @include rem(font-size, 16px);
+                        }
+                    }
+                    .result {
+                        position: relative;
+
+                        display: inline-block;
+                        .img-wrap {
+                            display: inline-block;
+                            width: 200px;
+                            margin-right: 15px;
+                        }
+                        .thumbnail {
+                            // height: 100px;
+                            padding: 0;
+                            // margin: 10px;
+
+                            border: 2px solid $yellow;
+                        }
+                        .remove_pict {
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+
+                            padding: 3px 5px;
+
+                            font-family: $blogger_L;
+                            font-weight: bold;
+
+                            color: $medium-gray;
+                            border-radius: 50%;
+                            background-color: $white;
+
+                            @include rem(font-size, 12px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.right-section {
+    margin-bottom: 60px;
+    .cart {
+        .heading {
+            padding: 20px 15px;
+
+            border-bottom: 1px solid #ccc;
+            h4 {
+                margin-bottom: 5px;
+
+                font-family: $blogger_L;
+                font-style: italic;
+
+                color: $dark-gray;
+
+                @include rem(font-size, 20px);
+            }
+            p {
+                font-family: $blogger_R;
+
+                color: #999;
+
+                @include rem(font-size, 14px);
+            }
+        }
+        .plumbing-issues {
+            padding: 15px;
+
+            border-bottom: 1px solid #ccc;
+
+            @include medmxn(768px, 991px) {
+                padding-right: 0;
+                padding-left: 0;
+            }
+            &.input {
+                padding: 20px 0 15px 0;
+                padding-right: 0;
+                padding-left: 0;
+                margin-bottom: 40px;
+
+                border-bottom: none;
+            }
+            & > span {
+                display: inline-block;
+                float: none;
+                width: 72%;
+
+                font-family: $blogger_L;
+
+                vertical-align: middle;
+
+                color: $dark-gray;
+
+                @include rem(font-size, 18px);
+                @include rem(line-height, 22px);
+                @include medmxn(768px, 991px) {
+                    @include rem(font-size, 16px);
+                }
+                &.remove-box {
+                    display: inline-block;
+                    width: 25%;
+
+                    text-align: right;
+                    vertical-align: top;
+                    .multiple-items {
+                        margin-right: 10px;
+                    }
+                    img {
+                        width: 18px;
+                        height: 18px;
+                        margin-bottom: -2px;
+
+                        opacity: .5;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom-action {
+            .cart-amount {
+                padding: 10px 0;
+                overflow: hidden;
+                span {
+                    margin-top: 10px;
+
+                    font-family: $blogger_R;
+
+                    color: $dark-gray;
+
+                    @include rem(font-size, 14px);
+                    &:last-child {
+                        margin-top: 0;
+
+                        @include rem(font-size, 24px);
+                    }
+                }
+            }
+            button {
+                height: 50px;
+            }
+        }
+    }
+}
+
+.summary-modal {
+    height: 600px;
+    .modal-dialog {
+        // height: 600px;
+        margin: 0;
+        .modal-content {
+            height: 100%;
+
+            border: none;
+            border-radius: 0;
+            background-clip: none;
+            box-shadow: none;
+        }
+        .modal-header {
+            border-bottom: none;
+        }
+    }
+    .M-summary-body {
+        // height: 600px;
+        padding-top: 0 !important;
+
+        background-color: $white;
+        .right-section {
+            margin-bottom: 0;
+            .cart {
+                .heading {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}
+
+// beauty accordian
+.beauty-accordian {
+    .panel-title {
+        a {
+            .title {
+                width: 68%;
+
+                @include rem(line-height, 2.2rem);
+            }
+            .price {
+                width: 30%;
+
+                text-align: right;
+            }
+        }
+    }
+}
+
+
+// Fitness page style
+.select-days {
+    .checkbox {
+        label {
+            width: auto;
+            height: auto;
+            min-height: 0;
+
+            font-family: $blogger_R;
+
+            border: none;
+            border-bottom: 1px solid transparent;
+            border-radius: 0;
+        }
+        input[type="checkbox"]:checked + label {
+            color: $green;
+            border-bottom: 1px solid $green;
+        }
+    }
+}
